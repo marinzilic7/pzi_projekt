@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.93);
+    font-family: "Poppins";
+}
+
+/*  REGISTER.PHP */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.reg-form{
+    background-color: #202020;
+    width:470px;
+    height:700px;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+    
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    
+    
+}
+
+.reg{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    margin-top:20px;
+    height: 60px;
+    padding:10px;
+    width:350px;
+    font-family: "Poppins";
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    background-color: #202020;
+    border: 1px solid grey;
+    color:#fff;
+    transition: .6s;
+    
+
+}
+
+.inputs input::placeholder{
+    color:#fff;
+    letter-spacing: 1.5px;
+    
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    transition: .6s;
+
+}
+
+.button button:hover{
+    filter: brightness(90%);
+    transition: .6s;
+}
+
+.button button{
+    width:350px;
+    height:60px;
+    font-family: "Poppins";
+    font-weight: bold;
+    background-color: #0074E4;
+    outline: none;
+    border: none;
+    color:#fff;
+    cursor:pointer;
+    transition: .6s;
+}
+
+
+.inputs input:focus{
+    border:1px solid #fff;
+    transition: .6s;
+    
+    
+}
+
+.inputs input:hover{
+    border: 1px solid #fff;
+    transition: .4s;
+}
+
+#acc{
+    color:#fff;
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .6s;
+    
+    
+}
+
+#acc:hover{
+    font-size: 16px;
+    transition: .6s;
+    
+}
+
+#span{
+    font-weight: bold;
+    padding-left:3px;
+    text-decoration: underline;
+    
+   
+}
+
+/*  LOGIN.PHP */
+
+.heading-2{
+    font-size:13px;
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    
+}
+
+.reg-form-2{
+    background-color: #202020;
+    width:470px;
+    height:550px;
+    border-radius: 10px;
+    margin-top:60px;
+}
+
+/* RESPONSIVE REGISTER AND LOGIN.PHP */
+
+
+
+@media only screen and (max-width: 420px) {
+    body {
+      background-color: #202020;
+    }
+}
+
+
+
+
+

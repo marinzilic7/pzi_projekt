@@ -1,0 +1,1213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    background-color: rgba(0, 0, 0, 0.93);
+    overflow-x: hidden;
+
+}
+
+
+
+.nav-bar {
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.user-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+    width: 100%;
+}
+
+.user-icon i {
+    margin-left: 20px;
+}
+
+.hamburger div {
+    margin-top: 5px;
+    border: 1px solid #fff;
+    width: 20px;
+    display: none;
+}
+
+/* RESPONSIVE  */
+
+@media only screen and (max-width: 420px) {
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .user-icon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+
+
+    }
+
+    #icon {
+        position: relative;
+        left: 25px;
+        top: 2px;
+
+    }
+
+    .hamburger div {
+        display: block;
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+
+    }
+
+    .hamburger {
+        margin-left: 10px;
+    }
+
+    .search-bar {
+        display: none !important;
+    }
+
+    .cover-image {
+        display: none !important;
+    }
+
+    .resp {
+        display: block !important;
+    }
+
+    .mobile-img {
+        background-image: url("../images/vala.jfif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 467px;
+        width: 300px;
+        border-radius: 5px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        color: #fff;
+
+    }
+
+    .mobile p {
+        margin-top: 50px;
+    }
+
+    .words {
+        display: block;
+    }
+
+    .words button {
+
+        height: 50px;
+        width: 150px;
+        border-radius: 5px;
+        border: none;
+        background-color: #0074E4;
+        font-family: "Poppins";
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 20px;
+
+    }
+
+    .mobile-cover {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+
+}
+
+/*  MOBILE NAV */
+
+
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+.mobile ul {
+    list-style-type: none;
+    background-color: #2A2A2A;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+
+}
+
+.mobile ul li {
+    margin-top: 5px;
+}
+
+.mobile ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+
+
+/*  SEARCH - BAR */
+
+.search-bar {
+    position: relative;
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.search {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.search input {
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #2A2A2A;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: #fff;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+}
+
+.search input::placeholder {
+    font-family: "Poppins";
+    font-weight: bold;
+
+}
+
+#srch-icon {
+    position: relative;
+    right: 30px;
+}
+
+.nav-list {
+    margin-left: 30px;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list ul li {
+    margin-right: 30px;
+}
+
+#Discover {
+    font-weight: bold;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+
+
+/*  POSTER  */
+
+.cover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.cover-image {
+    background-image: url("../images/valorant.png");
+    background-size: 801px 450px;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    width: 801px;
+    border-radius: 20px;
+
+
+}
+
+
+
+.cover-words {
+    color: #fff;
+    margin-left: 35px;
+    margin-top: 90px;
+
+}
+
+.cover-words p {
+    margin-top: 30px;
+}
+
+.cover-words button {
+    height: 50px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0074E4;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+.resp {
+    display: none;
+}
+
+.games_on_sale h4 {
+    color: #fff;
+    position: relative;
+    width: 30%;
+    left: 310px;
+    margin-top: 50px;
+
+}
+
+.slider {
+    margin-top: 40px;
+
+}
+
+.slider1 {
+    color: #fff;
+}
+
+.prizes1 {
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+.prizes1 button {
+    font-family: "Poppins";
+    color: #fff;
+    font-weight: bold;
+    background-color: #0074E4;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 50px;
+    font-size: 11px;
+    margin-top: 10px;
+
+}
+
+#line_tru {
+    text-decoration: line-through;
+    font-size: 16px;
+    position: relative;
+
+
+
+}
+
+.prizes1 p {
+    font-size: 16px;
+}
+
+.slider-images {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slider-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-images .slider1 {
+    margin-left: 30px;
+}
+
+.slider1 p {
+    margin-top: 10px;
+}
+
+.slider1 img {
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    transition: width .4s height .4s;
+}
+
+.slider1 img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.covers {
+    margin-top: 100px;
+}
+
+.covers_2 {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.covers_2 img {
+    border-radius: 10px;
+}
+
+.covers h3,
+h4,
+p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.covers p {
+    color: #F5F5F599;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.free_games {
+    width: 1550px;
+    height: 472.16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF1A;
+    position: relative;
+    left:15px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.free_games_heading {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.gift_heading {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.gift_heading h4 {
+    position: relative;
+    bottom: 8px;
+    right: 12px;
+}
+
+.free_games_heading button {
+    font-family: "Poppins";
+    color: #fff;
+    background-color: #2A2A2A;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    width: 124.2px;
+    height: 32px;
+    margin-right: 50px;
+    margin-top: 30px
+}
+
+.free_games_images {
+    display: flex;
+
+
+
+}
+
+
+.free_games_images img {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.free_games_images_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.free_games_images_1 button {
+    width: 432.67px;
+    height: 29.59px;
+    position: relative;
+    left: 50px;
+    border: none;
+    background-color: #0074E4;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    outline: none;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.free_games_images_1 p {
+    color: #fff;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.free_games_images_1 :last-child {
+    color: #F5F5F599;
+    font-weight: bold;
+}
+
+.free_games_images_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.free_games_images_2 button {
+    width: 432.67px;
+    height: 29.59px;
+    position: relative;
+    left: 50px;
+    border: none;
+    background-color: #000000;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    outline: none;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+
+.free_games_images_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.free_games_images_3 button {
+    width: 432.67px;
+    height: 29.59px;
+    position: relative;
+    left: 50px;
+    border: none;
+    background-color: #000000;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    outline: none;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.free_games_images_2 p {
+    color: #fff;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.free_games_images_2 :last-child {
+    color: #F5F5F599;
+    font-weight: bold;
+}
+
+.free_games_images_3 p {
+    color: #fff;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.free_games_images_3 :last-child {
+    color: #F5F5F599;
+    font-weight: bold;
+}
+
+.games_slider_heading {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.games_slider_heading button {
+    width: 70px;
+    height: 25px;
+    background-color: #0074E4;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.games_slider {
+    margin-top: 50px;
+
+}
+
+.games_slider_images {
+    display: flex;
+    color: #fff;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 123%;
+
+}
+
+.games_slider_images_all {
+    margin-left: 40px;
+
+
+
+}
+
+.games_slider_images_2 {
+    display: flex;
+}
+
+#new_to_epic {
+    font-size: 11px;
+    background-color: #2A2A2A;
+    border: none;
+    letter-spacing: 1px;
+    width: 97.27px;
+    text-align: center;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.RSS {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.rele_heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rele_heading button {
+    font-family: "Poppins";
+    color: #fff;
+    border: none;
+    background-color: #2A2A2A;
+    width: 108px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+
+}
+
+.rele_games_prize {
+    display: flex;
+
+
+
+
+}
+
+
+
+
+.rele_games_prize img {
+    margin-top: 25px;
+    border-radius: 10px;
+
+}
+
+.rele_games_prize2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.covers_again {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    position: relative;
+    left: 40px;
+    color: #fff;
+}
+
+.covers_again img {
+    border-radius: 10px;
+}
+
+.covers_again_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.covers_again_1 h3 {
+    margin-top: 20px;
+}
+
+.covers_again_1 p {
+    position: relative;
+    right: 30px;
+    color: #F5F5F599;
+}
+
+.covers_again_1 :last-child {
+    color: #fff;
+}
+
+.last-cover-game {
+    color: #fff;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.last-cover-game-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+
+}
+
+.last-cover-game-para p {
+    position: relative;
+    right: 30px;
+    color: #F5F5F599;
+
+}
+
+.last-cover-game-para button {
+    margin-top: 20px;
+    height: 50px;
+    width: 119.08px;
+    border-radius: 4px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #202020;
+    height: 484px;
+    width: 1615px;
+    position: relative;
+    right: 12px;
+    color: #fff;
+    padding: 50px;
+    margin-top: 70px;
+    display: block;
+}
+
+.footer i {
+    color: grey;
+    margin-left: 5px;
+
+}
+
+.footer_details {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.text {
+    position: relative;
+    right:23px;
+    font-size: 11.36px;
+}
+
+.footer hr {
+    margin-top: 30px;
+    border-color: grey;
+    width: 105%;
+
+}
+
+.prava {
+    font-size: 12px;
+    display: flex;
+    position: relative;
+    right: 30px;
+}
+
+#tittleforpc{
+    color:#fff;
+    margin-top:50px;
+    margin-left:50px;
+}
+
+.pc_games_pay{
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    
+}
+
+.pc_games_pay p{
+    letter-spacing: 2px;
+}
+
+
+
+.pc_games{
+    margin-top:30px;
+    margin-left:50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.pc_games_1 img{
+    border-radius: 10px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+    height: 268px;
+    width: 201.16px;
+}
+
+.pc_games_1 img:hover{
+    height: 250px;
+    transition:.4s ease-in-out;
+    opacity: 0.5;
+}
+
+.pc_games_2 img{
+    cursor: pointer;
+    border-radius: 10px;
+    transition:.4s ease-in-out;
+    height: 268px;
+    width: 201.16px;
+}
+
+.pc_games_2 img:hover{
+    height: 250px;
+    transition:.4s ease-in-out;
+    opacity: 0.5;
+}
+
+.pc_games2{
+    margin-top:70px;
+    margin-left:50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+#logg_out{
+   position:relative;
+   top:1px;
+}
+
+#nfs{
+    position: relative;
+    right: 10px;
+}
+
+.footer{
+    height: 300px;
+}
+
+#fleex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#tricolor{
+    color:#fff;
+}
+
+.pay-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+.pay-card div{
+    margin-left:50px;
+}
+
+.pay-card img{
+    border-radius: 10px;
+    width: 300px;
+    height: 363px;
+}
+
+.pay_card_headings{
+    color:#fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final_pay p{
+    color:#fff;
+    font-size: 40px;
+}
+
+.final_pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final_pay button{
+    padding: 8px 16px;
+    background-color: #0074E4;
+    color:#fff;
+    font-size:17px;
+    border:none;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+#shop{
+    color:#fff;
+    font-size:14px;
+    position: relative;
+    left:50px;
+    bottom:18px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #0074E4;
+    padding: 0px 8px;
+}
+
+.cart h1{
+    margin-top:50px; 
+    margin-left:50px;
+    color:#fff;
+}
+
+#cart_hr{
+
+ 
+   margin-top:20px;
+   border-color: gray;
+}
+
+.cart_view{
+    margin-top:50px;
+
+}
+
+.cart_view_things {
+    margin-top:30px;
+}
+
+.cart_view_things{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    height: 200px;
+    align-items: center;
+  
+}
+
+
+.cart_view_things img{
+    height: 153px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.head_and_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    color:#fff;
+}
+
+.button_count {
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 15%;
+    color:#fff;
+}
+
+.button_count p{
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+.button_count button{
+    padding:8px 16px;
+    border-radius: 10px;
+    font-size:21px;
+    border:none;
+    background-color: gray;
+    cursor: pointer;
+    
+}
+
+.card_price{
+    color:#fff;
+    margin-right: 50px;
+    letter-spacing: 3px;
+}
+
+.total_card{
+    color:#fff; 
+    width: 90%;
+    margin-top:30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.delete_total{
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-end;    
+    margin-right: 60px;
+    color:#fff; 
+
+}
+
+.delete a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: red;
+    padding:4px 12px;
+    border:none;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+}
+
+.delete_total button{
+    padding:4px 12px;
+    background-color:red; 
+    font-size:14px;
+    border:none;
+    border-radius: 10px;
+    color:#fff; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.total h2{
+    margin-top:50px;
+    margin-right:70px;
+    display: flex;
+    justify-content: flex-end;
+    color:#fff;
+    font-size: 27px;
+    letter-spacing: 2.5px;
+}
+
+.welcome_div{
+    margin-top:50px;
+}
+.welcome_div h1{
+    color:#fff; 
+    text-align: center;
+}
+
+.panel{
+    color:#fff;
+    margin-top:50px;
+}
+
+.panel_admin{
+    background-color:#2A2A2A;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.panel_settings{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.panel_settings input{
+    position:relative;
+    left:30px;
+    padding:8px 16px;
+    background-color: #202020;
+    border:none;
+    color:#fff; 
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    outline: none;
+    margin-top:20px;
+}
+
+.panel_settings button{
+    position: relative;
+    left:30px;
+    margin-top:30px;
+    border:none;
+    background-color: #0074E4;
+    padding:8px 16px;
+    border-radius: 10px;
+    color:#fff; 
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ch_pw h1{
+    color:#fff; 
+    text-align: center;
+    margin-top:30px;
+}
+
+.ch_pw_sett_staffs form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ch_pw_sett_staffs{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: #2A2A2A;
+    padding:30px;
+    margin-top:50px;
+    color:#fff; 
+    height: 300px;
+}
+
+.ch_pw_sett_staffs input{
+    margin-top:30px; 
+    position:relative;
+    left:50px;
+    padding:8px 16px;
+    background-color: #202020;
+    border:none;
+    color:#fff; 
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    outline: none;
+    margin-top:20px;
+}
+
+
+.ch_pw_sett_staffs button{
+    position: relative;
+    left:45px;
+    margin-top:30px;
+    border:none;
+    background-color: #0074E4;
+    padding:8px 16px;
+    border-radius: 10px;
+    color:#fff; 
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    width: 230px;
+    
+}
