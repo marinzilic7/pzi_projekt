@@ -46,7 +46,7 @@
                 $sql_delete =  "DELETE FROM `cardss` WHERE user_id = '$user_id' AND game_id = '$idd'"; 
                 $query_delete = mysqli_query($db,$sql_delete);
                 
-                echo "<script language='javascript'>alert('Igra vec dodana!');window.location.replace('pc.view.php');</script>"; 
+                echo "<script language='javascript'>alert('Igra vec dodana!');window.location.replace('ps_view.php');</script>"; 
             }else{
                 header('Location:ps_view.php');
             }

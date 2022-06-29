@@ -30,6 +30,8 @@
         
         $sql2 = "INSERT INTO cardss VALUES(NULL ,'$idd','$user_id', '$name', '$price','$img')";
         $query2 = mysqli_query($db,$sql2);
+
+        
     
         function da_li_je_dodano($user_id, $idd){
             global $db;
@@ -46,7 +48,7 @@
                 $sql_delete =  "DELETE FROM `cardss` WHERE user_id = '$user_id' AND game_id = '$idd'"; 
                 $query_delete = mysqli_query($db,$sql_delete);
                 
-                echo "<script language='javascript'>alert('Igra vec dodana!');window.location.replace('pc.view.php');</script>"; 
+                echo "<script language='javascript'>alert('Igra vec dodana!');window.location.replace('ps_view.php');</script>"; 
             }else{
                 header('Location:ps_view.php');
             }
@@ -59,7 +61,7 @@
         da_li_je_dodano($user_id,$idd);
     
         
-     
+        
 
 
 
