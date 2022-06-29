@@ -57,6 +57,16 @@ echo $ress;
 
 $sql_4 = "UPDATE cardss SET price='$ress' WHERE game_id = '$id'";
 $query_4 = mysqli_query($db,$sql_4);
+
+$sql_7 = "INSERT INTO game_num VALUES('id','$name','$id')"; 
+$query_7 = mysqli_query($db,$sql_7);
+
+$sql_8 = "SELECT * FROM game_num WHERE count_id = '$id'";
+$query_8 = mysqli_query($db,$sql_8); 
+
+$row2 = mysqli_num_rows($query_8);
+
+
 header('Location: card_view.php');
 
 

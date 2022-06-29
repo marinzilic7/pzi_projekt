@@ -22,12 +22,19 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
             <h1><?php echo $value2['name'] ?></h1>
 
         </div>
-
         
         <div class="button_count">
             
-                <button id = 'count_minus'>-</button>
-                <p id='counter'>0</p>
+                <a href="count_minus.php?id=<?php echo $value2['game_id']; ?>&user_id=<?php  echo $_SESSION['id']?>"><button id='count_plus'>-</button></a>
+                <p id='counter'><?php 
+                $game_id = $value2['game_id']; 
+                $sql_8 = "SELECT * FROM game_num WHERE count_id = '$game_id'";
+                $query_8 = mysqli_query($db,$sql_8); 
+
+                $row2 = mysqli_num_rows($query_8);  
+                echo $row2;
+                
+                ?></p>
                 <a href="count.php?id=<?php echo $value2['game_id']; ?>&user_id=<?php  echo $_SESSION['id']?>"><button id='count_plus'>+</button></a>
         </div>
        
@@ -39,7 +46,7 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
 
     <div class="delete_total">
         <div class="delete">
-            <a href="delete_from_card.php?id=<?php echo $value2['id'] ?>">DELETE</a>
+            <a href="delete_from_card.php?id=<?php echo $value2['id'] ?>&&game_id=<?php echo $value2['game_id']?>">DELETE</a>
             
         </div>
     </div>
