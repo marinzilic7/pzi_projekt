@@ -52,7 +52,7 @@ $result2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
 
             <div class="final_pay">
                 <p><?php echo $value['price'] ?></p>
-                <a href="add_ps.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
+                <a href="add_ps_2.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
             </div>
         </div>
     <?php endforeach;  ?>

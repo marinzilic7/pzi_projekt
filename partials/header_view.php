@@ -27,7 +27,7 @@
                     <li><a href="pc.view.php">PC</a></li>
                     <li><a href="ps_view.php">PS</a></li>
                     <li><a href="xbox_view.php">XBOX</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    
                 </ul>
             </div>
 

@@ -25,6 +25,7 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
 
         
         <div class="button_count">
+            
                 <button id = 'count_minus'>-</button>
                 <p id='counter'>0</p>
                 <a href="count.php?id=<?php echo $value2['game_id']; ?>&user_id=<?php  echo $_SESSION['id']?>"><button id='count_plus'>+</button></a>

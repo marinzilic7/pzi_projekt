@@ -5,7 +5,7 @@
 
 
 
-    $sql = "SELECT name,price,img  FROM pc_games_2 WHERE id = '$idd'";
+        $sql = "SELECT name,price,img  FROM pc_games_2 WHERE id = '$idd'";
     
     
         $query = mysqli_query($db,$sql);
@@ -18,6 +18,7 @@
             $img = $value['img'];
         };
     
+        
         $user_id = $_GET['user_id'];
    
 
@@ -57,6 +58,9 @@
     
         da_li_je_dodano($user_id,$idd);
     
+        
+     
+
 
 
 ?>
