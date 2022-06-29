@@ -19,16 +19,14 @@ foreach($result2 as $key2){
     $game = $key2['price']; 
 }
 
+
+
 foreach($result as $key){
     $res = (float)$key['price'] + (float)$game;
 
     $res = $res."€";
     
 }
-
-
-
-
 
 $sql_2 = "UPDATE cardss SET price='$res' WHERE game_id = '$id'";
 $query_2 = mysqli_query($db,$sql_2);
@@ -45,14 +43,14 @@ foreach($result_2 as $key_2){
  
 }
 
-echo $game; 
+
 
 foreach($result as $key){
     $ress = (float)$key['price'] + (float)$game;
      
 }
 
-echo $ress; 
+ 
 
 
 $sql_4 = "UPDATE cardss SET price='$ress' WHERE game_id = '$id'";
@@ -116,6 +114,32 @@ foreach($result as $key){
 
 $sql_06 = "UPDATE cardss SET price='$res03' WHERE game_id = '$id'";
 $query_06 = mysqli_query($db,$sql_06);
+
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+$sql_07 = "SELECT price FROM xbox_2 WHERE id = '$id'"; 
+$query_07 = mysqli_query($db, $sql_07); 
+$result_04 = mysqli_fetch_all($query_07, MYSQLI_ASSOC);
+
+foreach($result_04 as $key_04){
+    $game =$key_04['price']; 
+ 
+}
+
+foreach($result as $key){
+    $res04 = (float)$key['price'] + (float)$game;
+     
+}
+
+$sql_08 = "UPDATE cardss SET price='$res04' WHERE game_id = '$id'";
+$query_08 = mysqli_query($db,$sql_08);
+
+
+
+
 
 
 

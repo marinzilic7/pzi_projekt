@@ -37,7 +37,7 @@ if ($row > 0){
     foreach($result_1 as $key){
         $res = (float)$key['price'] - (float)$game;
 
-        $res = $res."€";
+        $res = $res;
     
     }
 
@@ -59,7 +59,7 @@ if ($row > 0){
     foreach($result_1 as $key){
         $res2 = (float)$key['price'] - (float)$game;
 
-        $res2 = $res2."€";
+        $res2 = $res2;
     
     }
 
@@ -79,7 +79,7 @@ if ($row > 0){
     foreach($result_1 as $key){
         $res3 = (float)$key['price'] - (float)$game;
 
-        $res3 = $res3."€";
+        $res3 = $res3;
     
     }
 
@@ -99,7 +99,7 @@ if ($row > 0){
     foreach($result_1 as $key){
         $res4 = (float)$key['price'] - (float)$game;
 
-        $res4 = $res4."€";
+        $res4 = $res4;
     
     }
 
@@ -107,7 +107,44 @@ if ($row > 0){
     $query_001 = mysqli_query($db,$sql_001);
 
     //-------------------------------------------------------------------------------------------------------------------------------------
+
+    $sql02 = "SELECT price FROM xbox WHERE id = '$game_id'"; 
+    $query02 = mysqli_query($db, $sql02); 
+    $result02 = mysqli_fetch_all($query02, MYSQLI_ASSOC);
+
+    foreach($result02 as $key02){
+        $game = $key02['price']; 
+    }
+
+    foreach($result_1 as $key){
+        $res5 = (float)$key['price'] - (float)$game;
+
+        $res5 = $res5;
     
+    }
+
+    $sql_002 = "UPDATE cardss SET price='$res5' WHERE game_id = '$game_id'";
+    $query_002 = mysqli_query($db,$sql_002);
+
+    //-------------------------------------------------------------------------------------------------------------------------------------
+
+    $sql03 = "SELECT price FROM xbox_2 WHERE id = '$game_id'"; 
+    $query03 = mysqli_query($db, $sql03); 
+    $result03 = mysqli_fetch_all($query03, MYSQLI_ASSOC);
+
+    foreach($result03 as $key03){
+        $game = $key03['price']; 
+    }
+
+    foreach($result_1 as $key){
+        $res6 = (float)$key['price'] - (float)$game;
+
+        $res6 = $res6;
+    
+    }
+
+    $sql_003 = "UPDATE cardss SET price='$res6' WHERE game_id = '$game_id'";
+    $query_003 = mysqli_query($db,$sql_003);
 
 }
     

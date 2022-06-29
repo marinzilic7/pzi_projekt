@@ -7,10 +7,11 @@
     <div class="pc_games">
         <?php foreach($result5 as $value):?>
             <div class="pc_games_1">
-                <a href="buy_xbox.php?id=<?php echo $value['id'] ?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
+                
+                <a href="buy_xbox.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
                 <div class="pc_games_pay">
                 <p><?php echo $value['name'] ?></p>
-                <p><?php echo $value['price'] ?></p>
+                <p><?php echo $value['price'] ?>€</p>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -19,10 +20,10 @@
     <div class="pc_games2">
     <?php foreach($result6 as $value):?>
             <div class="pc_games_2">
-                <a href="buy_xbox.php?id=<?php echo $value['id'] ?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
+            <a href="buy_xbox.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
                 <div class="pc_games_pay">
                 <p><?php echo $value['name'] ?></p>
-                <p><?php echo $value['price'] ?></p>
+                <p><?php echo $value['price'] ?>€</p>
                 </div>
             </div>
             

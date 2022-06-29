@@ -11,7 +11,7 @@
             <a href="buy_game.php?id=<?php echo $value['id'] ?>&userid=<?php echo $_SESSION['id']?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
                 <div class="pc_games_pay">
                 <p><?php echo $value['name'] ?></p>
-                <p><?php echo $value['price'] ?></p>
+                <p><?php echo $value['price'] ?>€</p>
                 </div>
             </div>
         <?php endforeach; ?>
@@ -23,7 +23,7 @@
                     <a href="buy_game.php?id=<?php echo $value['id'] ?>&userid=<?php echo $_SESSION['id']?>"><?php echo "<img src=./pc_games_img". $value['img'].">";  ?></a>
                     <div class="pc_games_pay">
                     <p><?php echo $value['name'] ?></p>
-                    <p><?php echo $value['price'] ?></p>
+                    <p><?php echo $value['price'] ?>€</p>
                     </div>
                 </div>
         <?php endforeach; ?>

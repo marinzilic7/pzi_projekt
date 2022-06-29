@@ -38,7 +38,7 @@ $result2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
             </div>
 
             <div class="final_pay">
-                <p><?php echo $value['price'] ?></p>
+                <p><?php echo $value['price'] ?>€</p>
                 <a href="add_to_cart.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
             </div>
         </div>
@@ -55,7 +55,7 @@ $result2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
             </div>
 
             <div class="final_pay">
-                <p><?php echo $value['price'] ?></p>
+                <p><?php echo $value['price'] ?>€</p>
                 <a href="add_to_card_games.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
             </div>
 

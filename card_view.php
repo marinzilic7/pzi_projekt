@@ -39,7 +39,7 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
         </div>
        
         <div class="card_price">
-            <h3 id="price"><?php echo $value2['price']  ?></h3>
+            <h3 id="price"><?php echo $value2['price']  ?>€</h3>
         </div>
         
     </div>
