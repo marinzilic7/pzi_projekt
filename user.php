@@ -6,6 +6,10 @@ $sql = "SELECT * FROM userss WHERE id = '$id' ";
 $query = mysqli_query($db,$sql); 
 $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
+$sql2 = "SELECT * FROM administrator WHERE id = '$id' "; 
+$query2 = mysqli_query($db,$sql2); 
+$result = mysqli_fetch_all($query2, MYSQLI_ASSOC); 
+
 
 
 
@@ -21,10 +25,6 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
     <div class="panel">
         <div class="panel_admin">
-            <div class="panel_image">
-                <h3>Uploud your avatar</h3>
-                <input type="file">
-            </div>
             <div class="panel_settings">
                 <h4>Your name :</h4>
                 <input type="text" value="<?php echo $key['name'];?>">

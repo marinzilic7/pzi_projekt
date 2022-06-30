@@ -40,8 +40,17 @@ $result2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
             <div class="final_pay">
                 <p><?php echo $value['price'] ?>€</p>
                 <a href="add_to_cart.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
+                 
             </div>
+            
         </div>
+        <?php if($_SESSION['id'] == 100): ?>
+            <div class="admin-buttons">
+            <a href="admin_delete.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button id="delete_admin">Delete</button></a>
+            </div>  
+        <?php endif;  ?>
+        
+        
         <?php endforeach;  ?>
     </div>
 
@@ -56,8 +65,11 @@ $result2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
 
             <div class="final_pay">
                 <p><?php echo $value['price'] ?>€</p>
-                <a href="add_to_card_games.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart</button></a>
+                <a href="add_to_card_games.php?id=<?php echo $value['id'] ?>&user_id=<?php echo $_SESSION['id']?>"><button>Add to Cart </button></a>
+                
             </div>
+
+            
 
              
         </div>

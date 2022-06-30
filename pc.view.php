@@ -2,8 +2,16 @@
 
 <?php  require './partials/header_view.php' ?>
 
-
+    
     <h3 id="tittleforpc" >PC Games > </h3>
+
+    <?php if($_SESSION['id'] == 100): ?>
+
+    <div class="admin_add">
+        <a href="admin_add.php?user_id=<?php echo $_SESSION['id']?>"><button>Add Game</button></a>
+    </div>
+
+    <?php endif; ?>
 
     <div class="pc_games">
         <?php foreach($result as $value):?>
