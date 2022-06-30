@@ -58,7 +58,8 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
 
 <div class="total_money">
     <div class="total">
-            <h2 id = "total" > Total :<?php  
+            <a href="check.php"><button>Checkout</button></a>
+            <h2 id = "total" > Total : <nbsp><?php  
             function total_price(){
                 global $db;
                 $sql4 = "SELECT SUM(price) FROM cardss";
@@ -75,14 +76,6 @@ $result2 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
             total_price();
             
             ?>€</h2>
-            
-          
-
-           
-
-        
-            
-        
     </div>
     
 </div>
