@@ -4,3 +4,4 @@ let amir = document.getElementById('amir');
 btn.addEventListener('click',()=>{
     alert("Uspijesna narduzba!");
 })
+

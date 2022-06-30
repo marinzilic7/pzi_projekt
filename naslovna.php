@@ -1,8 +1,9 @@
+
+
 <?php 
 
 require 'connection.php';
 session_start();
-
 $email = $_POST['email'];
 $password = $_POST['password']; 
 
@@ -15,10 +16,15 @@ if($id){
     $_SESSION['id'] = $id; 
     header('Location:naslovna.view.php');
 }else{
-    
     header('Location:login.view.php');
-   
 }
-
 ?>
+
+<script>
+let pw = document.getElementById('pw');
+pw.innerHTML = 'Marin';
+
+</script>
+
+
 

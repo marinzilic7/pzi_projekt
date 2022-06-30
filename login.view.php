@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +16,6 @@
 <div data-aos="zoom-in">
     <div class="container">
         <div class="reg-form-2">
-
-            
                 <div class="image">
                     <img src="./images/firebox.png" alt="" height="150px">
                 </div>
@@ -30,6 +27,7 @@
                         <div class="inputs"> 
                             <input type="Email" name="email" placeholder="Email" required>
                             <input type="Password" name="password" placeholder="Password" required>
+                            <p id="pw"></pi>
                         </div>
                         <div class="button">
                             <button>Continue</button>
@@ -50,13 +48,8 @@
 </body>
 </html>
 
-<?php 
+
+<?php require 'connection.php'; ?>
 
 
-require "connection.php";
-
-
-
-
-?>
 
