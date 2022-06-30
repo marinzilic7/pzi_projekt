@@ -64,11 +64,14 @@ body {
 
     .user-icon {
         display: flex;
-        justify-content: flex-end;
+        justify-content:flex-end;
         align-items: center;
+    }
 
-
-
+    .shp{
+        position: relative;
+        left:20px;
+        top:2px;
     }
 
     #icon {
@@ -76,6 +79,14 @@ body {
         left: 25px;
         top: 2px;
 
+    }
+
+    
+
+    #iCC{
+       position:relative;
+       right: 23px;
+       bottom:3px;
     }
 
     .hamburger div {
@@ -148,7 +159,110 @@ body {
 
     }
 
+    .games_on_sale {
+        position: relative !important;
+        right:280px !important;
+        width: 80%;
+    }
 
+    .games_on_sale h4{
+        width: 80% !important;
+    }
+
+    .slider1{
+        margin-top:20px;
+    }
+
+    .slider1 p{
+        font-size:13px;
+    }
+
+    .prizes1 p{
+        font-size:13px !important;
+    }
+
+    .cover_one p{
+        font-size:13px !important;
+    }
+
+    .cover_one img{
+        height: 300px;
+        width: 400px;
+    }
+
+    .cover_two img{
+        margin-top:20px;
+        height: 300px;
+        width: 400px;
+    }
+
+    .cover_two p{
+        font-size:13px !important;
+    }
+
+    
+    
+    .free_games{
+        display:none !important;
+    }
+    .free_games_heading{
+        display:none !important;
+    }
+
+    .free_games_images_1{
+        display:none  !important;
+    }
+    .free_games_images_2{
+        display:none  !important;
+    }
+    .free_games_images_3{
+        display:none  !important;
+    }
+
+    .games_slider_heading{
+       display: none !important;
+    }
+
+    .games_slider_images{
+        display:none !important;
+    }
+
+    .RSS{
+        display: none !important;
+    }
+
+    .covers_again{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        position: relative;
+        bottom:50px !important;
+        
+        
+    }
+
+    .covers_again_1{
+        position:relative;
+        right: 23px;
+    }
+
+    .covers_again_1 img{
+        width:330px;
+        height:290px;
+        margin-top:10px;
+        
+       
+    }
+    .covers_again h3{
+        font-size:13px;
+        text-align: justify;
+    }
+    .covers_again_1 p{
+        font-size:12px;
+       
+        
+    }
+
+   
 
 
 }
@@ -417,6 +531,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 .covers_2 img {
@@ -453,6 +568,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
 
 }
 
@@ -461,6 +577,7 @@ p {
     align-items: center;
     margin-left: 50px;
     margin-top: 30px;
+
 }
 
 .gift_heading h4 {
@@ -596,6 +713,7 @@ p {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    width: 88%;
 }
 
 .games_slider_heading button {
@@ -614,11 +732,13 @@ p {
 
 .games_slider {
     margin-top: 50px;
+    
 
 }
 
 .games_slider_images {
     display: flex;
+    
     color: #fff;
     margin-top: 50px;
     overflow: hidden;
@@ -708,18 +828,21 @@ p {
     margin-top: 100px;
     justify-content: space-evenly;
     position: relative;
-    left: 40px;
+   
     color: #fff;
+    width: 100%;
 }
 
 .covers_again img {
     border-radius: 10px;
+    margin-right: 50px;
 }
 
 .covers_again_1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap !important;
 }
 
 .covers_again_1 h3 {
@@ -745,6 +868,7 @@ p {
 
 .last-cover-game-para {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -756,6 +880,7 @@ p {
     position: relative;
     right: 30px;
     color: #F5F5F599;
+    width: 70%;
 
 }
 

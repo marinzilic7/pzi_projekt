@@ -20,11 +20,6 @@ if($id){
 }
 ?>
 
-<script>
-let pw = document.getElementById('pw');
-pw.innerHTML = 'Marin';
-
-</script>
 
 
 

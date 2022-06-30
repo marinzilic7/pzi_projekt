@@ -217,153 +217,21 @@
                 </div>
 
             </div>
+            
 
-            <div class="RSS">
-                <div class="new_releases">
-                    <div class="rele_heading">
-                        <h3>New Releases</h3>
-                        <button>View More</button>
-                    </div>
-
-                    <div class="rele_games_prize">
-                        <img src="./images/Eiyuden.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Eiyuden Chronicle:Rising</p>
-                            <p>€14.99</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/salt.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Salt and Sacrifice</p>
-                            <p>€15.99</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/song.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Songs of Conquest</p>
-                            <p>€29.99</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/we_were_here.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>We Were Here Forever</p>
-                            <p>€16.19</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/hyper_charge.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>HYPERCHARGE: Unboxed</p>
-                            <p>€15.99</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="top_sellers">
-                    <div class="rele_heading">
-                        <h3>New Releases</h3>
-                        <button>View More</button>
-                    </div>
-
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/tiny_tina.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Tiny Tina's Wonderlands</p>
-                            <p>€59.99</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/genshin.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Genshin Impact</p>
-                            <p>Free</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/evil_dead.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Evil Dead: The Game</p>
-                            <p>€39.99</p>
-                        </div>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/rocket_league.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Rocket League</p>
-                            <p>Free</p>
-                        </div>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/sifu.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Sifu</p>
-                            <p>€39.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="coming_soon">
-                    <div class="rele_heading">
-                        <h3>New Releases</h3>
-                        <button>View More</button>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/dont_be.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Available 05/11/22</p>
-                            <p>New to epic</p>
-                        </div>
-
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/TANGLE.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Available 05/12/22</p>
-
-                        </div>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/nesto.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Available 05/12/22</p>
-                            <p>New to Epic</p>
-                        </div>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/evil_dead.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Available 05/13/22</p>
-                            <p>€39.99</p>
-                        </div>
-                    </div>
-                    <div class="rele_games_prize">
-                        <img src="./images_v2/ONE_MORE_ISLAND.jpg" alt="" width="96px" height="128px">
-                        <div class="rele_games_prize2">
-                            <p>Available 05/16/22</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+            
+            
+        
 
             <div class="covers_again">
                 <div class="covers_again_1">
-                    <img src="./images_v2/dino.jpg" alt="" width="689px" height="387.56px">
+                    <img src="./images_v2/dino.jpg" alt="" width="609px" height="387.56px">
                     <h3>Available Now - Prehistoric Kingdom</h3>
                     <p>Join Early Access now and build the ultimate zoo full of prehistoric animals.</p>
                     <p>€23.99</p>
                 </div>
                 <div class="covers_again_1">
-                    <img src="./images/fortnite.jpg" alt="" width="689px" height="387.56px">
+                    <img src="./images/fortnite.jpg" alt="" width="629px" height="387.56px">
                     <h3>Fortnite</h3>
                     <p>Protect what's rightfully yours. Grab the Goldenbane Guardian Quest Pack in the Item Shop now!</p>
                     <p>Learn More</p>
@@ -377,9 +245,44 @@
                     <button>Learn More</button>
                 </div>
 
+                
+    </div>
+
+    <div class="footer">
+                <div class="footer_details">
+                    <div class="social">
+                        <i class="fa fa-facebook-f" style="font-size:31px"></i>
+                        <i class="fa fa-twitter" style="font-size:31px"></i>
+                        <i class="fa fa-youtube-play" style="font-size:31px"></i>
+                    </div>
+
+                    <div class="text">
+                        <p>© 2022, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal <br> Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other <br> brands or product names are the trademarks of their respective owners. Non-US transactions through Epic Games International, S.à r.l. </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="prava">
+                        <p>Terms of Service</p>
+                        <p>Privacy Policy</p>
+                        <p>Store Refund Policy</p>
+                    </div>
+                </div>
+
             </div>
+        </div>
+        
+
+        
+      
+<script src="apps.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <?php require './partials/footer_view.php' ?>
+
+
+
+
 
 
 

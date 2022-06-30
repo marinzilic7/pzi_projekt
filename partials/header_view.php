@@ -46,17 +46,19 @@
                 
                 
                 ?></div>
-                
-                <a href="card_view.php"><i class="fa fa-shopping-cart" style="font-size:18px;color:#fff"></i></a>
+                <div class="shp">
+                    <a href="card_view.php"><i class="fa fa-shopping-cart" id="shp_cart" style="font-size:18px;color:#fff"></i></a>
                
-                <a href="user.php?id=<?php echo $_SESSION['id']; ?>" id="iC" href="" ><i id="icon" class="fa fa-user-o" style="color:white"></i></a>
-              
-                <a id="iC" href="<?php if(isset($_SESSION['id'])){
+                 <a href="user.php?id=<?php echo $_SESSION['id']; ?>" id="iCC" href="" ><i id="icon" class="fa fa-user-o" style="color:white"></i></a>
+             
+                    <a id="iC" href="<?php if(isset($_SESSION['id'])){
                     echo 'logout.php'; 
                 }else{
                     header('Location:index.php');
                 }
-                ?>"><i id="logg_out" i class="fa fa-sign-out" style="color:white; font-size:18px"></i></a>
+               ?>"><i id="logg_out" i class="fa fa-sign-out" style="color:white; font-size:18px"></i></a>
+                </div>
+                
                 <div class="hamburger">
                     <div></div>
                     <div></div>
@@ -68,11 +70,11 @@
         <div class="mobile-nav">
             <div class="mobile">
                 <ul>
-                    <li><a href="#">STORE</a></li>
-                    <li><a href="#">PC</a></li>
-                    <li><a href="#">PS</a></li>
-                    <li><a href="#">XBOX</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="naslovna.view.php">STORE</a></li>
+                    <li><a href="pc.view.php">PC</a></li>
+                    <li><a href="ps_view.php">PS</a></li>
+                    <li><a href="xbox_view.php">XBOX</a></li>
                 </ul>
             </div>
         </div>
+
