@@ -24,6 +24,7 @@ if($admin_id){
     $_SESSION['id'] = $id; 
     header('Location:naslovna.view.php');
 }else{
+    //echo "<script language='javascript'>alert('Pogresan mail ili lozinka!');window.location.replace('login.view.php');</script>";
     header('Location:login.view.php');
 }
 

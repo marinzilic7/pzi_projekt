@@ -389,6 +389,14 @@ body {
     .ch_card_info input{
         width: 350px !important;
     }
+
+    .game_add_sett input{
+        width: 400px !important;
+    }
+
+    .game_add h1{
+        font-size: 25px !important;
+    }
     
 
 

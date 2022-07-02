@@ -4,6 +4,15 @@
 
     <h3 id="tittleforpc" >PS Games > </h3>
 
+    <?php if($_SESSION['id'] == 100): ?>
+
+    <div class="admin_add">
+        <a href="admin_add_ps.php?user_id=<?php echo $_SESSION['id']?>"><button>Add Game</button></a>
+    </div>
+
+<?php endif; ?>
+
+
     <div class="pc_games">
         <?php foreach($result3 as $value):?>
             <div class="pc_games_1">
